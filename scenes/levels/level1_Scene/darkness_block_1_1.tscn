@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://6fq8haytgh88"]
+
+[ext_resource type="Script" path="res://scripts/darkness/darkness_block_1_1.gd" id="1_l6cnf"]
+[ext_resource type="Texture2D" uid="uid://7uhgpikmv2q" path="res://blockholders/sprites/tileset.png" id="1_qtw0r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dd0lh"]
+size = Vector2(20, 21)
+
+[node name="Darkness_Block1_1" type="Area2D" unique_id=804301445]
+script = ExtResource("1_l6cnf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2020745297]
+shape = SubResource("RectangleShape2D_dd0lh")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1163026447]
+texture = ExtResource("1_qtw0r")
+region_enabled = true
+region_rect = Rect2(128, 96, 32, 32)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

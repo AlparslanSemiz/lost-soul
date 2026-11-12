@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://id87sawxx0x1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
+size = Vector2(32, 32)
+
+[node name="WallJumpWall" type="StaticBody2D" unique_id=469517100 groups=["wall_jump_wall"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=472610454]
+shape = SubResource("RectangleShape2D_1")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1654204981]
+color = Color(0.2, 0.6, 1, 0.8)
+polygon = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)

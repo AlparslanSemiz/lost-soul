@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bhf74tnovdeaa"]
+
+[ext_resource type="Script" uid="uid://cdtphahhwavhg" path="res://scripts/levels/schneller.gd" id="1_c83tr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c83tr"]
+size = Vector2(20, 73.5)
+
+[node name="schneller" type="Area2D" unique_id=929243248]
+script = ExtResource("1_c83tr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=896652123]
+position = Vector2(1, -15.25)
+shape = SubResource("RectangleShape2D_c83tr")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

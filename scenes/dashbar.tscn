@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://b0ncmp111fhpm"]
+
+[ext_resource type="Script" uid="uid://fg6xwbcbuuj8" path="res://scripts/ui/dashbar.gd" id="1_dashbar"]
+[ext_resource type="Texture2D" uid="uid://b434dvusfqo3g" path="res://assets/cooldown-Sheet.png" id="2_rsina"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4k6f"]
+atlas = ExtResource("2_rsina")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pi6qs"]
+atlas = ExtResource("2_rsina")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fkpgt"]
+atlas = ExtResource("2_rsina")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qiwng"]
+atlas = ExtResource("2_rsina")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smra6"]
+atlas = ExtResource("2_rsina")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hwxb5"]
+atlas = ExtResource("2_rsina")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ydpr2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x4k6f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pi6qs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fkpgt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qiwng")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smra6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hwxb5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="DashBar" type="Control" unique_id=1277620402]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -354.0
+offset_top = -124.0
+offset_right = 2.0
+offset_bottom = -64.0
+grow_horizontal = 0
+grow_vertical = 0
+script = ExtResource("1_dashbar")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=82110408]
+position = Vector2(210.0, 40.0)
+scale = Vector2(3.5, 3.5)
+sprite_frames = SubResource("SpriteFrames_ydpr2")
+autoplay = "default"

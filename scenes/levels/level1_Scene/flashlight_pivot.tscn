@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://hyepqwdee3cj"]
+
+[ext_resource type="Texture2D" uid="uid://buupvg11rlmly" path="res://assets/5bbc1a9931068-b6594086cf2a19b19b4fcd58283e039b.png" id="1_f76au"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f76au"]
+size = Vector2(71, 181)
+
+[node name="FlashlightPivot" type="Node2D" unique_id=1247913208]
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=83294011]
+position = Vector2(-3.000002, -1)
+rotation = 9.1552734e-05
+scale = Vector2(0.33694443, 1.1655384)
+energy = 1.5
+range_z_min = -4096
+range_z_max = 4096
+range_layer_min = -128
+range_layer_max = 128
+texture = ExtResource("1_f76au")
+texture_scale = 0.2
+
+[node name="Area2D" type="Area2D" parent="." unique_id=464863159 groups=["isik_grubu"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=171935341]
+position = Vector2(-1, -6)
+shape = SubResource("RectangleShape2D_f76au")

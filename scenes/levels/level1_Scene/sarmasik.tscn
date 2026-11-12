@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dqqsb320dgdhl"]
+
+[ext_resource type="Script" uid="uid://cu0ucmtau0pl3" path="res://scenes/levels/level1_Scene/sarmasik.gd" id="1_21uia"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rjvrp"]
+size = Vector2(34, 43)
+
+[node name="sarmasik" type="Area2D" unique_id=1950956920]
+script = ExtResource("1_21uia")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=80369547]
+position = Vector2(0, -6.5)
+shape = SubResource("RectangleShape2D_rjvrp")

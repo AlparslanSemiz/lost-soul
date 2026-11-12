@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ic6m8embti4b"
+path="res://.godot/imported/canavar_escape (mp3cut.net)(1).wav-fa77f469571aa901c9773e28eb2bc895.sample"
+
+[deps]
+
+source_file="res://music_sound_gamejam/canavar_escape (mp3cut.net)(1).wav"
+dest_files=["res://.godot/imported/canavar_escape (mp3cut.net)(1).wav-fa77f469571aa901c9773e28eb2bc895.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

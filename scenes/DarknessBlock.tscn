@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://diftucm75sxs5"]
+
+[ext_resource type="Script" path="res://scripts/darkness/darkness_block.gd" id="1_3aid2"]
+[ext_resource type="Texture2D" uid="uid://dtdncmd6dus80" path="res://blockholders/sprites/world_tileset.png" id="2_vun6i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bboqu"]
+size = Vector2(11.25, 11.25)
+
+[node name="DarknessBlock" type="Area2D" unique_id=1823739080]
+collision_mask = 2
+script = ExtResource("1_3aid2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1783010414]
+scale = Vector2(2, 2.088)
+texture = ExtResource("2_vun6i")
+region_enabled = true
+region_rect = Rect2(128, 0, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=540665877]
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_bboqu")
+
+[node name="Timer" type="Timer" parent="." unique_id=1440000081]
+wait_time = 0.234
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_on_darkness_block_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

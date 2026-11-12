@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://cfi8ak8tr703h"]
+
+[ext_resource type="Script" uid="uid://cgbfef2fwvktm" path="res://scripts/items/skill_pickup.gd" id="1_9l6tw"]
+[ext_resource type="Texture2D" uid="uid://pvpkq68huxye" path="res://assets/Lantern.png" id="2_kf7eu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_flashlight"]
+radius = 8.0
+
+[sub_resource type="Gradient" id="Gradient_o1eai"]
+colors = PackedColorArray(1, 1, 1, 1, 0.85, 0.6, 1, 0.6, 0, 0, 0, 0)
+offsets = PackedFloat32Array(0, 0.4, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_px2xq"]
+gradient = SubResource("Gradient_o1eai")
+fill = 1
+width = 128
+height = 128
+
+[node name="FlashlightPickup" type="Area2D" unique_id=1659825102]
+collision_layer = 0
+script = ExtResource("1_9l6tw")
+skill_name = "flashlight"
+pickup_label = "El feneri açıldı (F ile aç/kapat)"
+rotate_speed = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1544940180]
+shape = SubResource("CircleShape2D_flashlight")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=295712635]
+position = Vector2(0, -6.4462175)
+scale = Vector2(0.97782046, 0.7778886)
+texture = ExtResource("2_kf7eu")
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1249224629]
+color = Color(0.82, 0.65, 1, 1)
+energy = 0.9
+texture_scale = 1.8
+texture = SubResource("GradientTexture2D_px2xq")

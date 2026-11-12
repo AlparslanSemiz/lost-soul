@@ -1,0 +1,29 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/levels/blackout_darkness.gd" id="1_blkout"]
+[ext_resource type="Shader" path="res://shaders/blackout.gdshader" id="2_shader"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bkout"]
+shader = ExtResource("2_shader")
+shader_parameter/blackout_alpha = 0.0
+shader_parameter/light_uv = Vector2(0.5, 0.5)
+shader_parameter/light_radius = 0.7
+shader_parameter/light_direction = 1.0
+shader_parameter/aspect = 1.777
+shader_parameter/light_on = false
+
+[node name="BlackoutController" type="Node"]
+script = ExtResource("1_blkout")
+
+[node name="BlackoutLayer" type="CanvasLayer" parent="."]
+layer = 100
+
+[node name="Overlay" type="ColorRect" parent="BlackoutLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 1)
+material = SubResource("ShaderMaterial_bkout")
+mouse_filter = 2

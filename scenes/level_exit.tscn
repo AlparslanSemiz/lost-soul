@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://clvlexit2mno0"]
+
+[ext_resource type="Script" path="res://scripts/world/level_exit.gd" id="1_level_exit"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_exit"]
+size = Vector2(32, 64)
+
+[node name="LevelExit" type="Area2D"]
+collision_layer = 0
+collision_mask = 3
+script = ExtResource("1_level_exit")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_exit")
+debug_color = Color(1, 0.85, 0.2, 0.42)

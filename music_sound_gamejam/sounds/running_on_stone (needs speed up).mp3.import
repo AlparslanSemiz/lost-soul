@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://okeoc82qs03q"
+path="res://.godot/imported/running_on_stone (needs speed up).mp3-50e8b630d913a914376524e53cf3151b.mp3str"
+
+[deps]
+
+source_file="res://music_sound_gamejam/sounds/running_on_stone (needs speed up).mp3"
+dest_files=["res://.godot/imported/running_on_stone (needs speed up).mp3-50e8b630d913a914376524e53cf3151b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

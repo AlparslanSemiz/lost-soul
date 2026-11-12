@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://cgupljpb4j820"]
+
+[ext_resource type="Script" uid="uid://dj8ma6rmatc48" path="res://scripts/ui/flashlightbar.gd" id="1_flbar"]
+[ext_resource type="Texture2D" uid="uid://cdpgmxk30o4xy" path="res://assets/cooldown_2.png" id="2_p635t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aaqr2"]
+atlas = ExtResource("2_p635t")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4pen"]
+atlas = ExtResource("2_p635t")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0avut"]
+atlas = ExtResource("2_p635t")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2incy"]
+atlas = ExtResource("2_p635t")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dtaa4"]
+atlas = ExtResource("2_p635t")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l1d3m"]
+atlas = ExtResource("2_p635t")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_omavb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aaqr2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t4pen")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0avut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2incy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dtaa4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l1d3m")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="FlashlightBar" type="Control" unique_id=1621518391]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -250.0
+offset_top = -140.0
+offset_right = -18.0
+offset_bottom = -80.0
+grow_horizontal = 0
+grow_vertical = 0
+script = ExtResource("1_flbar")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=913174008]
+position = Vector2(210.0, 40.0)
+scale = Vector2(3.5, 3.5)
+sprite_frames = SubResource("SpriteFrames_omavb")
+autoplay = "default"
