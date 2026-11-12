@@ -6,7 +6,7 @@ You run through a pitch-dark pixel-art forest with nothing but a flashlight, whi
 
 ## Mechanics
 
-- **Flashlight** with its own energy bar — the forest is only visible where you point it
+- **Flashlight** with its own energy bar. The forest is only visible where you point it
 - **Darkness blocks and checkpoints**
 - **Dash** (with cooldown bar), **double jump** and **wall jump**
 - **Chasing monster**, enemies, kill zones and healing pickups
@@ -23,10 +23,10 @@ Controls: move `A`/`D` or `←`/`→`, jump `Space`, dash `Shift` or `F`, flashl
 
 Made together in one weekend:
 
-- [Alparslan Semiz](https://github.com/AlparslanSemiz) — gameplay programming: jumps, wall zones, dash cooldowns and animation feedback; the flashlight, darkness, checkpoints, healing zones, pickups, hazards and scene transitions
-- [aarmert](https://github.com/aarmert) — level 1, player scripts
-- [Maya-Tukel](https://github.com/Maya-Tukel) — art, music and sound effects, finish portal and orbs
-- [reignthevth](https://github.com/reignthevth) — project setup and first prototype, scenes, levels, animations
+- [Alparslan Semiz](https://github.com/AlparslanSemiz): gameplay programming: jumps, wall zones, dash cooldowns and animation feedback; the flashlight, darkness, checkpoints, healing zones, pickups, hazards and scene transitions
+- [aarmert](https://github.com/aarmert): level 1, player scripts
+- [Maya-Tukel](https://github.com/Maya-Tukel): art, music and sound effects, finish portal and orbs
+- [reignthevth](https://github.com/reignthevth): project setup and first prototype, scenes, levels, animations
 
 The original jam repository is [reignthevth/GAMEJAM](https://github.com/reignthevth/GAMEJAM); this is a cleaned-up copy for the portfolio.
 
