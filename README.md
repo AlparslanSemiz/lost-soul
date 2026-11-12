@@ -1,6 +1,6 @@
 # GAMEJAM — a dark-forest escape platformer
 
-A 2D platformer built in **48 hours at a game jam** (24–26 April 2026) by a team of five, in **Godot 4.6**.
+A 2D platformer built in **48 hours at ClementineJam**, the game jam at KIT (24–26 April 2026), by a team of five in **Godot 4.6**.
 
 You run through a pitch-dark pixel-art forest with nothing but a flashlight, while something chases you. The darkness is the main mechanic: your light is limited and checkpoints light the way.
 
