@@ -30,7 +30,7 @@ Controls: move `A`/`D` or `←`/`→`, jump `Space`, dash `Shift` or `F`, flashl
 
 Made together in one weekend:
 
-- [Alparslan Semiz](https://github.com/AlparslanSemiz): gameplay programming: jumps, wall zones, dash cooldowns and animation feedback; the flashlight, darkness, checkpoints, healing zones, pickups, hazards and scene transitions
+- [Alparslan Semiz](https://github.com/AlparslanSemiz): gameplay programming (player movement and abilities, level mechanics, scene flow)
 - [aarmert](https://github.com/aarmert): level 1, player scripts
 - [Maya-Tukel](https://github.com/Maya-Tukel): art, music and sound effects, finish portal and orbs
 - [reignthevth](https://github.com/reignthevth): project setup and first prototype, scenes, levels, animations
