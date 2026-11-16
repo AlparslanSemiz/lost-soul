@@ -9,7 +9,7 @@
 
 <p align="center"><b>Play:</b> open the project in <a href="https://godotengine.org/download">Godot 4.6</a> and press F5 (<a href="#run-it">steps</a>). There is no packaged download yet.</p>
 
-Built in a 3-day hackathon at KIT (ClementineJam, 24-26 April 2026) by a team of four. The darkness is the main mechanic: your light is limited and checkpoints light the way.
+Built in a 48-hour game jam at KIT (ClementineJam, 24-26 April 2026) by a team of four. The darkness is the main mechanic: your light is limited and checkpoints light the way.
 
 ## Mechanics
 
