@@ -31,9 +31,9 @@ Controls: move `A`/`D` or `←`/`→`, jump `Space`, dash `Shift` or `F`, flashl
 Made together in one weekend:
 
 - [Alparslan Semiz](https://github.com/AlparslanSemiz): gameplay programming (player movement and abilities, level mechanics, scene flow)
-- [aarmert](https://github.com/aarmert): level 1, player scripts
-- [Maya-Tukel](https://github.com/Maya-Tukel): art, music and sound effects, finish portal and orbs
-- [reignthevth](https://github.com/reignthevth): project setup and first prototype, scenes, levels, animations
+- [aarmert](https://github.com/aarmert): music, level 2 design, enemy mechanics and design
+- [Maya-Tukel](https://github.com/Maya-Tukel): art and sound effects, finish portal and orbs
+- [reignthevth](https://github.com/reignthevth): project setup and first prototype, level 1 design, scenes, animations
 
 The original jam repository is [reignthevth/GAMEJAM](https://github.com/reignthevth/GAMEJAM); this is a cleaned-up copy for the portfolio.
 
